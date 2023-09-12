@@ -21,7 +21,7 @@ function Sidebar() {
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
-            <ListItemText primary="หน้าแรก" />
+            <ListItemText primary="หน้าแรก"/>
           </ListItem>
           <ListItem button>
             <ListItemIcon>
@@ -79,14 +79,14 @@ function Sidebar() {
       </div>
 
       <div className="UserAccount">
-        <img
-          src="https://pbs.twimg.com/profile_images/1641773130279690240/4Qcrl-lP_400x400.jpg" // Replace with the user's profile picture
-          alt="User Profile"
-        />
-        <div className="UserInfo">
-          <span className="UserName">displayName</span>
-          <span className="UserHandle">@username</span>
-        </div>
+          <img
+            src="https://pbs.twimg.com/profile_images/1641773130279690240/4Qcrl-lP_400x400.jpg" // Replace with the user's profile picture
+            alt="User Profile"
+          />
+          <div className="UserInfo">
+            <span className="UserName">displayName</span>
+            <span className="UserHandle">@username</span>
+          </div>
       </div>
     </div>
   );

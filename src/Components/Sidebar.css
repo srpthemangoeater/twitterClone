@@ -10,12 +10,6 @@
     --icon-color-dark: #ffffff; 
   }
 
-  .MuiListItem-button{
-    width: auto;
-    height: 48px;
-    border-radius: 30px;
-  }
-
  .Sidebar {
     width:20dvw;
     min-width: 100px;
@@ -78,8 +72,7 @@
   }
 
   @media (max-width: 1280px) {
-    .css-10hburv-MuiTypography-root
-    {
+    .UserAccount >.UserInfo{
         display: none;
     }
   }
