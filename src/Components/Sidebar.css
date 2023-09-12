@@ -1,0 +1,107 @@
+
+:root {
+    --sidebar-bg-light: #f7f9fa;
+    --sidebar-bg-dark: #121212;
+    --text-light: #121212;
+    --text-dark: #f7f9fa;
+    --icon-color-light: #000000; 
+    --icon-color-dark: #ffffff; 
+    --icon-color-light: #000000; 
+    --icon-color-dark: #ffffff; 
+  }
+
+  .MuiListItem-button{
+    width: auto;
+    height: 48px;
+    border-radius: 30px;
+  }
+
+ .Sidebar {
+    width:20dvw;
+    min-width: 100px;
+    background-color: var(--sidebar-bg-light);
+    padding: 16px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-light);
+  }
+  
+  .css-i4bv87-MuiSvgIcon-root{
+    color:var(--icon-color-light);
+    }
+
+  .PostButton button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .PostButton button:hover {
+    background-color: #1990d8;
+  }
+  
+
+  .UserAccount {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  .UserAccount img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  
+  .UserInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .UserName {
+    font-weight: bold;
+  }
+  
+  .UserHandle {
+    color: #657786;
+  }
+
+  @media (max-width: 1280px) {
+    .css-10hburv-MuiTypography-root
+    {
+        display: none;
+    }
+  }
+
+    @media (prefers-color-scheme: light) {
+        .Sidebar {
+          background-color: var(--sidebar-bg-light);
+          color: var(--text-light);
+        }
+
+        .css-i4bv87-MuiSvgIcon-root{
+            color: var(--icon-color-light);
+        }
+      }
+      
+      @media (prefers-color-scheme: dark) {
+        .Sidebar {
+          background-color: var(--sidebar-bg-dark);
+          color: var(--text-dark);
+        }   
+        .css-i4bv87-MuiSvgIcon-root{
+        color: var(--icon-color-dark);
+        }
+      }
+      
