@@ -1,0 +1,19 @@
+.app {
+    display: flex;
+    justify-content:space-evenly; 
+    align-items: flex-start; 
+  }
+  
+
+  .Sidebar {
+    width: 25vw;
+
+  }
+  
+  .Feed {
+    width: 50vw;
+  }
+  
+  .Widget {
+    width: 25vw;
+  }
