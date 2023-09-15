@@ -6,14 +6,15 @@ import Widget from './Components/Widgets';
 function App() {
   return (
     <div className="app">
-      {/* <h1>twtter clone here</h1> */}
-
-      <Sidebar/>
-      <Feed/>
-      <Sidebar/>
-
-      
-
+      <div className="sidebar">
+        <Sidebar />
+      </div>
+      <div className="feed">
+        <Feed />
+      </div>
+      <div className="widget">
+        <Widget />
+      </div>
     </div>
   );
 }

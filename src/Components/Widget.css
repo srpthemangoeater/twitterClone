@@ -1,0 +1,20 @@
+
+:root {
+    --sidebar-bg-light: #f7f9fa;
+    --sidebar-bg-dark: #121212;
+    --text-light: #121212;
+    --text-dark: #f7f9fa;
+    --icon-color-light: #000000; 
+    --icon-color-dark: #ffffff; 
+    --icon-color-light: #000000; 
+    --icon-color-dark: #ffffff; 
+  }
+
+.Widget{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--sidebar-bg-dark);
+    padding: 16px;
+    border-left: 1px solid var(--sidebar-bg-light);
+}

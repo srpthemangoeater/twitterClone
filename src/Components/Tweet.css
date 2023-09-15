@@ -1,0 +1,15 @@
+.Tweet {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: red;
+  }
+  
+  .TweetUsername {
+    font-weight: bold;
+  }
+  
+  .TweetText {
+    margin-top: 5px;
+  }

@@ -56,7 +56,7 @@ const Sidebar = () => {
         />
         <div className="UserInfo">
           <span className="UserName">displayName</span>
-          <span className="UserHandle">@username</span>
+          <span className="UserHandle">@your_username</span>
         </div>
       </div>
     </div>
