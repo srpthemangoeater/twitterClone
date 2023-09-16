@@ -1,0 +1,66 @@
+:root {
+    --feedHeader-bg-light: #f7f9fa;
+    --feedHeader-bg-dark: #000000;
+    --items-bg-light: #F7F9F9;
+    --items-bg-dark: #16181C;
+    --text-light: #121212;
+    --text-dark: #f7f9fa;
+    --icon-color-light: #000000; 
+    --icon-color-dark: #ffffff; 
+    --icon-color-light: #000000; 
+    --icon-color-dark: #ffffff; 
+    --border-color-dark:#2F3336;
+    --border-color-light:#F7F9F9;
+  }
+
+  .FeedHeader{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Header{
+    padding: 1vw;
+    font-size: large;
+    color: var(--text-light);
+    background: var(--feedHeader-bg-light);
+  }
+
+  .Tab{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    color: var(--text-light);
+  }
+
+  .Tab-foryou{
+    flex:1;
+    padding: .5vw;
+  }
+
+  .Tab-following{
+    flex:1;
+    padding: .5vw;
+  }
+
+  @media (prefers-color-scheme: light) {
+    .Header{
+        color: var(--text-light);
+        background: var(--feedHeader-bg-light);
+      }
+    .Tab{
+    color: var(--text-light);
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .Header{
+        color: var(--text-dark);
+        background: var(--feedHeader-bg-dark);
+      }
+      .Tab{
+      color: var(--text-dark);
+      }
+  }

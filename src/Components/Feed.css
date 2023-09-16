@@ -1,14 +1,17 @@
-
 :root {
-    --sidebar-bg-light: #f7f9fa;
-    --sidebar-bg-dark: #121212;
-    --text-light: #121212;
-    --text-dark: #f7f9fa;
-    --icon-color-light: #000000; 
-    --icon-color-dark: #ffffff; 
-    --icon-color-light: #000000; 
-    --icon-color-dark: #ffffff; 
-  }
+  --feed-bg-light: #f7f9fa;
+  --feed-bg-dark: #000000;
+  --items-bg-light: #F7F9F9;
+  --items-bg-dark: #16181C;
+  --text-light: #121212;
+  --text-dark: #f7f9fa;
+  --icon-color-light: #000000; 
+  --icon-color-dark: #ffffff; 
+  --icon-color-light: #000000; 
+  --icon-color-dark: #ffffff; 
+  --border-color-dark:#2F3336;
+  --border-color-light:#F7F9F9;
+}
 
 .Feed {
     display: flex;
@@ -17,11 +20,42 @@
     width:100%;
     margin: auto;
     padding: 20px;
-    background-color: var(--sidebar-bg-dark);
+    padding-top: 15vh;
+    background-color: transparent;
     top:0;
+    color: red;
+  }
+
+  /* .FeedHeader{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border-color-light);
+  }
+
+  .Header{
+    font-size: large;
+    font-weight: 800;
+  }
+
+  .Tab{
+    display: flex;
+    flex-direction: row;
+  } */
+
+  .TweetInput
+  {
+    display: grid;
+    grid-template-areas:
+    'useracc  textarea  '
+    'useracc  textarea  '
+    'button   button    ';
+  }
+  .TweetInput .UserAccount{
+    grid-area: useracc;
   }
   
   .TweetInput textarea {
+    grid-area: textarea;
     width: calc(100% - 22px);
     padding: 10px;
     font-size: 16px;
@@ -32,6 +66,7 @@
   }
   
   .TweetInput button {
+    grid-area: button;
     padding: 10px 20px;
     font-size: 16px;
     background-color: #1da1f2;

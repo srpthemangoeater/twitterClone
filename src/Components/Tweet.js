@@ -12,8 +12,8 @@ const Tweet = ({ username, content }) => {
         />
         <div className="UserInfo">
           <span>
-            <span className="UserName">displayName</span>
-            <span className="UserHandle">@your_username</span>
+            <span className="DisplayName">displayName</span>
+            <span className="UserName">@your_username</span>
           </span>
         </div>
     </div>

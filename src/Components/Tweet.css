@@ -1,15 +1,75 @@
+:root {
+  --tweet-bg-light: #f7f9fa;
+  --tweet-bg-dark: #000000;
+  --items-bg-light: #F7F9F9;
+  --items-bg-dark: #16181C;
+  --text-light: #121212;
+  --text-dark: #f7f9fa;
+  --icon-color-light: #000000; 
+  --icon-color-dark: #ffffff; 
+  --icon-color-light: #000000; 
+  --icon-color-dark: #ffffff; 
+  --border-color-dark:#2F3336;
+  --border-color-light:#F7F9F9;
+}
+
 .Tweet {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
-    background-color: red;
+    background-color: var(--tweet-bg-light);
   }
   
-  .TweetUsername {
-    font-weight: bold;
+  .DisplayName{
+    color: var(--text-light);
+    font-weight: 700;
+  }
+
+  .UserName{
+    color: var(--text-light);
+    font-weight: 400;
+  
   }
   
   .TweetText {
-    margin-top: 5px;
+    color: var(--text-light);
+    margin-top: 10px;
+  }
+
+  @media (prefers-color-scheme: light) {
+    .Tweet {
+      border: 1px solid var(--border-color-light);
+      background-color: var(--tweet-bg-light);
+    }
+    .DisplayName{
+      color: var(--text-light);
+    }
+  
+    .UserName{
+      color: var(--text-light);
+    }
+    
+    .TweetText {
+      color: var(--text-light);
+  }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .Tweet {
+      border: 1px solid var(--border-color-dark);
+      background-color: var(--tweet-bg-dark);
+    }
+    
+    .DisplayName{
+      color: var(--text-dark);
+    }
+
+    .UserName{
+      color: var(--text-dark);
+    }
+        
+    .TweetText {
+      color: var(--text-dark);
+  }
   }

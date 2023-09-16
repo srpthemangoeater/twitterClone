@@ -1,40 +1,69 @@
-/* App.css */
+  :root {
+    --app-bg-light: #f7f9fa;
+    --app-bg-dark: #000000;
+  }
 
-body, html {
+  body, html {
     height: 100%;
     margin: 0;
+    background-color: var(--app-bg-light);
   }
   
   .app {
     display: flex;
   }
-  
+
+  .feedHeader{
+    width: 35vw;
+    position: fixed;
+    top: 0;
+    left: 28vw;
+    overflow-y: hidden;
+    z-index: 10;
+  }
+
   /* Sidebar */
   .sidebar {
-    width: 25dvw;
+    /* display: none; */
+    width: 28vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     overflow-y: hidden;
+    z-index: 10;
   }
   
   /* Feed */
   .feed {
-    padding-left: 25vw;
-    padding-right: 27vw;
-    width: 50vw;
-    overflow-y: hidden;
+    padding-left: 28vw;
+    padding-right: 38vw;
+    width: 35vw;
+    /* height: 100vh; */
+    /* overflow-y: hidden; */
     overflow-x: hidden;
   }
   
   /* Widget */
   .widget {
-    width: 25dvw;
+    /* display: none; */
+    width: 36vw;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
     overflow-y: hidden;
+    z-index: 10;
+  }
+
+  @media (prefers-color-scheme: light) {
+    body, html {
+      background-color: var(--app-bg-light);
+    }
   }
   
+  @media (prefers-color-scheme: dark) {
+    body, html {
+      background-color: var(--app-bg-dark);
+    }
+  }

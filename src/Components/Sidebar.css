@@ -1,14 +1,19 @@
 
 :root {
-    --sidebar-bg-light: #f7f9fa;
-    --sidebar-bg-dark: #121212;
-    --text-light: #121212;
-    --text-dark: #f7f9fa;
-    --icon-color-light: #000000; 
-    --icon-color-dark: #ffffff; 
-    --icon-color-light: #000000; 
-    --icon-color-dark: #ffffff; 
-  }
+  --sidebar-bg-light: #f7f9fa;
+  --sidebar-bg-dark: #000000;
+  --items-bg-light: #F7F9F9;
+  --items-bg-dark: #16181C;
+  --text-light: #121212;
+  --text-dark: #f7f9fa;
+  --icon-color-light: #000000; 
+  --icon-color-dark: #ffffff; 
+  --icon-color-light: #000000; 
+  --icon-color-dark: #ffffff; 
+  --border-color-dark:#2F3336;
+  --border-color-light:#F7F9F9;
+}
+
   .Sidebar {
     display: flex;
     flex-direction: column;
@@ -17,9 +22,7 @@
     padding: 16px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     color: var(--text-light);
-    border-right: 1px solid var(--sidebar-bg-light);
-
-
+    border-right: 1px solid var(--border-color-light);
   }
   
   .Navbar {
@@ -94,6 +97,8 @@
     .Sidebar {
       background-color: var(--sidebar-bg-light);
       color: var(--text-light);
+      border-right: 1px solid var(--border-color-light);
+      
     }
   
     .css-i4bv87-MuiSvgIcon-root {
@@ -105,6 +110,7 @@
     .Sidebar {
       background-color: var(--sidebar-bg-dark);
       color: var(--text-dark);
+      border-right: 1px solid var(--border-color-dark);
     }
   
     .css-i4bv87-MuiSvgIcon-root {
